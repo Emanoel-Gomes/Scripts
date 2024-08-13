@@ -14,4 +14,6 @@ else
     for url in $(cat saida); do 
         host $url | grep "has address"
     done > "$2"
+    # limpar arquivo
+    rm saida site.html
 fi
